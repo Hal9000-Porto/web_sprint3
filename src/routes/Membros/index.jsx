@@ -79,7 +79,7 @@ const membrosDaEquipe = [
 
  
 
-        nome: 'Pedro Henrique Lourenço - (98402)',
+        nome: 'Pedro Henrique Lourenço (98402)',
 
  
 
@@ -101,7 +101,7 @@ const membrosDaEquipe = [
 
  
 
-        nome: 'Rafael Klanfer Nunes - 99791',
+        nome: 'Rafael Klanfer Nunes (99791)',
 
  
 
