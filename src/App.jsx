@@ -8,7 +8,6 @@ function App(){
     <main>
       <Menu/>
       <Outlet/>
-    
     </main>
   )
 }
