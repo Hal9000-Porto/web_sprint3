@@ -3,7 +3,7 @@ import { guinchoTipos } from "../../components/TipoGuinchos"
 export default function FeedBack() {
     return (
         <>
-        <div class="tab-content active-tab">
+        <div class="tab-content">
         <h2>Feedback do Guincho</h2>
         <form id="feedbackForm" class="formulario">
             <label for="ordemServico">Número da Ordem de Serviço:</label>
