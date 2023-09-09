@@ -53,11 +53,21 @@ export default function Recomendacao() {
                     <option value="Roda travada">Roda travada</option>
                 </select>
 
-                <label for="taraCaminhao">Tara do Caminhão (em kilos):</label>
-                <input type="number" id="taraCaminhao" name="taraCaminhao" required/>
+                <label for="marcaCaminhao">Marca do Caminhão:</label>
+                <select id="marcaCaminhao" name="marcaCaminhao">
+                        <option value="DAF">DAF</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Iveco">Iveco</option>
+                        <option value="Mercedez">Mercedes</option>
+                        <option value="Scania">Scania</option>
+                        <option value="Volvo">Volvo</option>
+                        <option value="Volvo">Volkswagen</option>
+                        <option value="Volvo">MAN</option>
+                        <option value="Volvo">Hyundai</option>
+                </select>
                 
-                <label for="imagem">Incluir Imagem:</label>
-                <input type="file" id="imagem" name="imagem" accept="image/*"/>
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required/>
 
                 <button type="submit" onclick="clicked(event)">Classificar</button>
             </form>
