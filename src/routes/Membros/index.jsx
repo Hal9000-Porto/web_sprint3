@@ -59,7 +59,7 @@ const membrosDaEquipe = [
 
  
 
-        nome: 'Pedro Henrique Archilha - (550450)',
+        nome: 'Pedro Henrique Archilha (550450)',
 
  
 
