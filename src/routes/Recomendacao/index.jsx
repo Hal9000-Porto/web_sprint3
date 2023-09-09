@@ -3,8 +3,8 @@ import React from 'react';
 export default function Recomendacao() {
 
     function handleClick(event) {
-        event.preventDefault(); // Evita a submissão do formulário ao clicar no botão.
-        alert("Você clicou no botão Classificar!");
+        event.preventDefault(); 
+        alert("OrionAI recomenda o guincho:\nPESADO COM PLAT HIDRAULICA MUNCK");
     }
 
     return (
