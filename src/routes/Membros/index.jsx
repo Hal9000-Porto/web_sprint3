@@ -18,7 +18,7 @@ const membrosDaEquipe = [
 
  
 
-        nome: 'Diogo Gallina - 98605',
+        nome: 'Diogo Gallina (98605)',
 
 
         foto: '../../src/assets/diogo.jpg',
@@ -65,10 +65,7 @@ const membrosDaEquipe = [
 
         foto: '../../src/assets/pedro.png',
 
- 
 
-    
- 
 
     },
 
@@ -161,7 +158,4 @@ export default function Membros() {
  
 
     );
-
- 
-
 }
