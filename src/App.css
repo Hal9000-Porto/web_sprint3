@@ -29,7 +29,7 @@ body {
 
 .navbar {
   text-align: center;
-  background-color: #003366;
+  background-color: #508ac4;
   color: #fff;
   padding: 10px; 
 }
@@ -174,7 +174,7 @@ th {
 /* Rodape */
 
   footer {
-    background-color: #003366;
+    background-color: #508ac4;
     color: #fff;
     padding: 20px;
 }
@@ -185,20 +185,19 @@ th {
     align-items: flex-start; 
 }
 
-.footer-links-title {
-    margin-bottom: 5px; 
-}
-
-.footer-logo {
-    flex: 0; 
-    text-align: right; 
-}
 footer p{
   text-align: center;
 
 }
-.footer-logo img {
-    max-width: 50px; 
+.footer-logo-image {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.footer-text {
+    display: inline-block;
 }
 footer a {
   text-decoration: none; 
