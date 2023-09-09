@@ -96,7 +96,7 @@ export default function Recomendacao() {
                 <label htmlFor ="cidade">Cidade:</label>
                 <input type="text" id="cidade" name="cidade" required/>
 
-                <button type="submit" onClick={handleClick}>OrionAI recomenda o guincho: PESADO COM PLAT HIDRAULICA MUNCK</button>
+                <button type="submit" onClick={handleClick}>Recomendar Guincho</button>
 
             </form>
 
