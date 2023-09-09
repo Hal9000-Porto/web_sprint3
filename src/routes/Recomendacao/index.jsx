@@ -1,4 +1,4 @@
-export default function Home() {
+export default function Recomendacao() {
     return (
         <div id="classification" class="tab-content">
             <h2>Classificação do Guincho</h2>
