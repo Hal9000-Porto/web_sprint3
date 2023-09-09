@@ -6,10 +6,10 @@ export default function Recomendacao() {
                 <label for="numeroOS">Número da OS:</label>
                 <input type="number" id="numeroOS" name="numeroOS" required/>
 
-                <label for="dataChamado">Data do Chamado:</label>
+                <label for="dataChamado">Data do Atendimento:</label>
                 <input type="date" id="dataChamado" name="dataChamado" required/>
 
-                <label for="idSegurado">ID do Segurado:</label>
+                <label for="idSegurado">CPF do Segurado:</label>
                 <input type="text" id="idSegurado" name="idSegurado" required/>
 
                 <label for="marcaCaminhao">Marca do Caminhão:</label>
@@ -30,6 +30,9 @@ export default function Recomendacao() {
 
                 <label for="taraCaminhao">Tara do Caminhão (em kilos):</label>
                 <input type="number" id="taraCaminhao" name="taraCaminhao" required/>
+
+                <label for="tamanhoCaminhao">Tamanho do Caminhão (em kilos):</label>
+                <input type="number" id="tamanhoCaminhao" name="tamanhoCaminhao" required/>
 
                 <label for="tipoEngate">Tipo de Engate:</label>
                 <select id="tipoEngate" name="tipoEngate">
