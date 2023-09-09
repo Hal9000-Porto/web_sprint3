@@ -1,6 +1,6 @@
 export default function Home() {
     return (
-        <div id="classification" class="tab-content active-tab">
+        <div id="classification" class="tab-content">
             <h2>Classificação do Guincho</h2>
             <form id="classificationForm" class="formulario">
                 <label for="numeroOS">Número da OS:</label>
