@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f4f6;
+}
+
 .menu {
   background-color: #003366;
   color: white;
@@ -30,4 +41,95 @@
 
 .navbar a:hover {
   color: #ff5722;
+}
+
+
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  border-top: none;
+}
+
+.active-tab {
+  display: block;
+}
+
+.formulario {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario label, form input, form select {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.formulario button {
+  background-color: #005599;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: #003366;
+}
+
+.login {
+  background-color: #003366; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+.login-card {
+  background-color: #fff; /* Fundo branco */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.login h2 {
+  margin-bottom: 20px;
+}
+.login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-inputs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.login label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.login input{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.login button {
+  background-color: #3498db; 
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login button:hover {
+  background-color: #2980b9; 
+}
+.login a {
+  text-decoration: none; 
+  color: #fff;
 }
