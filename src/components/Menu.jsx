@@ -3,8 +3,8 @@ export default function Menu() {
     return (
         <>
         <div class="menu">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/HAL9000.svg" alt="Logo Grupo HAL 9000"/>
-        <h1>Grupo HAL 9000</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Porto_2022.svg/1280px-Porto_2022.svg.png" alt="Logo Porto Seguro" />
+        <h1>Guincho Adviser</h1>
         </div>
        <nav class="navbar">
             <Link to='/'>Classificação do Guincho</Link>

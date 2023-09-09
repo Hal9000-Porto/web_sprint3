@@ -23,7 +23,8 @@ export default function Rodape() {
         </div>
 
         <div class="footer-logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Porto_2022.svg/1280px-Porto_2022.svg.png" alt="Logo Porto Seguro" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/HAL9000.svg" alt="Logo Grupo HAL 9000"/>
+         
         </div>
     </div>
 </footer>

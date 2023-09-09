@@ -16,7 +16,7 @@ body {
   padding: 1em;
 }
 .menu img {
-  width: 50px;
+  width: 150px;
   vertical-align: middle;
 }
 
@@ -189,7 +189,7 @@ footer p{
 
 }
 .footer-logo img {
-    max-width: 150px; 
+    max-width: 50px; 
 }
 footer a {
   text-decoration: none; 
