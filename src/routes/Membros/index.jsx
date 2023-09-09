@@ -35,7 +35,7 @@ const membrosDaEquipe = [
 
  
 
-        nome: 'João Dubas Leal Kleye - 76153',
+        nome: 'João Dubas Leal Kleye - (76153)',
 
  
 
@@ -59,7 +59,7 @@ const membrosDaEquipe = [
 
  
 
-        nome: 'Pedro Henrique Archilha - 550450',
+        nome: 'Pedro Henrique Archilha - (550450)',
 
  
 
@@ -79,7 +79,7 @@ const membrosDaEquipe = [
 
  
 
-        nome: 'Pedro Henrique Lourenço - 98402',
+        nome: 'Pedro Henrique Lourenço - (98402)',
 
  
 
