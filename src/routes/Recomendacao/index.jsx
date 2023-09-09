@@ -53,6 +53,9 @@ export default function Recomendacao() {
                     <option value="Roda travada">Roda travada</option>
                 </select>
 
+                <label for="taraCaminhao">Tara do Caminhão (em kilos):</label>
+                <input type="number" id="taraCaminhao" name="taraCaminhao" required/>
+                
                 <label for="imagem">Incluir Imagem:</label>
                 <input type="file" id="imagem" name="imagem" accept="image/*"/>
 
