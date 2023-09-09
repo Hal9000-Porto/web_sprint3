@@ -7,7 +7,8 @@ function App(){
   return(
     <main>
       <Menu/>
-    <Outlet/>
+      <Outlet/>
+    
     </main>
   )
 }
