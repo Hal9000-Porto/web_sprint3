@@ -1,7 +1,7 @@
 export default function Recomendacao() {
     return (
         <div id="classification" class="tab-content">
-            <h2>Classificação do Guincho</h2>
+            <h2>Recomendação do Guincho</h2>
             <form id="classificationForm" class="formulario">
                 <label for="numeroOS">Número da OS:</label>
                 <input type="number" id="numeroOS" name="numeroOS" required/>
