@@ -1,6 +1,6 @@
 import { guinchoTipos } from "../../components/TipoGuinchos"
 
-export default function FeedBack() {
+export default function Feedback() {
     return (
         <>
         <div class="tab-content">

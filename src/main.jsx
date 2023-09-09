@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Home from './routes/Home/index.jsx'
+import Recomendacao from './routes/Recomendacao/index.jsx'
 import Membros from './routes/Membros/index.jsx'
 import Login from './routes/Login/index.jsx'
 import Historico from './routes/Historico/index.jsx'
-import FeedBack from './routes/FeedBack/index.jsx'
+import Feedback from './routes/Feedback/index.jsx'
 import Error from './routes/Error/index.jsx'
 
 const router = createBrowserRouter([{
@@ -17,7 +17,7 @@ const router = createBrowserRouter([{
   children: [
     {
       path: '/',
-      element: <Home/>,
+      element: <Recomendacao/>,
     },{
     path: '/membros',
     element: <Membros/>,
@@ -26,7 +26,7 @@ const router = createBrowserRouter([{
     element: <Historico/>,
   },{
     path: '/feedback',
-    element: <FeedBack/>,
+    element: <Feedback/>,
   },{
     path: '/login',
     element: <Login/>,
