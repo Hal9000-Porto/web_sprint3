@@ -1,10 +1,7 @@
 import { historico } from "../../components/HistoricoAtendimento";
 import React, { useState } from "react";
 
-
-
 export default function Historico() {
-
     function extrairMes(data) {
         const partes = data.split("-"); // Divide a data em partes usando o traço como separador
         return partes[1]; // A segunda parte corresponde ao mês
@@ -17,7 +14,11 @@ export default function Historico() {
             <h2>Histórico de Atendimentos</h2>
             <div class="formulario">
                 <label for="filterMonth">Filtrar por mês:</label>
-                <select id="filterMonth" onchange="filterData()">
+                <select
+                    id="filterMonth"
+                    onChange={(e) => setSelectedMonth(e.target.value)}
+                    value={selectedMonth}
+                >
                     <option value="all">Todos</option>
                     <option value="01">Janeiro</option>
                     <option value="02">Fevereiro</option>
@@ -113,9 +114,7 @@ export default function Historico() {
                     </tbody>
                 </table>
 
-                <div id="aggregatedData">
-                    {/* <!-- Dados agregados serão gerados pelo JavaScript -->*/}
-                </div>
+                <div id="aggregatedData"></div>
             </div>
         </div>
     );
