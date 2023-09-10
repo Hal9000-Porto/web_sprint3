@@ -1,5 +1,5 @@
-import { historico } from "../../components/HistoricoAtendimento";
 import React, { useState } from "react";
+import { historico } from "../../components/HistoricoAtendimento";
 
 export default function Historico() {
     function extrairMes(data) {

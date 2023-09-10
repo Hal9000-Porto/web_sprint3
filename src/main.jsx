@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Recomendacao from './routes/Recomendacao/index.jsx'
-import Membros from './routes/Membros/index.jsx'
-import Login from './routes/Login/index.jsx'
-import Historico from './routes/Historico/index.jsx'
 import Error from './routes/Error/index.jsx'
 import Feedback from './routes/FeedBack/index.jsx'
+import Historico from './routes/Historico/index.jsx'
+import Login from './routes/Login/index.jsx'
+import Membros from './routes/Membros/index.jsx'
+import Recomendacao from './routes/Recomendacao/index.jsx'
 
 const router = createBrowserRouter([{
   path: '/',
