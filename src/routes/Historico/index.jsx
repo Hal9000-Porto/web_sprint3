@@ -1,7 +1,14 @@
 import { historico } from "../../components/HistoricoAtendimento"
 
 export default function Historico() {
+    
+    function extrairMes(data) {
+        const partes = data.split('-'); // Divide a data em partes usando o traço como separador
+        return partes[1]; // A segunda parte corresponde ao mês
+      }
+    
     return (
+        
 
         <div id="history" class="tab-content" >
         <h2>Histórico de Atendimentos</h2>
