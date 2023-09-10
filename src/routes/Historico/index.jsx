@@ -6,6 +6,7 @@ import React, { useState } from 'react';
 const [selectedMonth, setSelectedMonth] = useState('all'); 
 
 export default function Historico() {
+    
     function extrairMes(data) {
         const partes = data.split("-"); // Divide a data em partes usando o traço como separador
         return partes[1]; // A segunda parte corresponde ao mês
