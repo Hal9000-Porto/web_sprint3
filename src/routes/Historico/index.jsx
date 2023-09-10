@@ -1,19 +1,19 @@
 import { historico } from "../../components/HistoricoAtendimento";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 
-
-const [selectedMonth, setSelectedMonth] = useState('all'); 
 
 export default function Historico() {
-    
+
     function extrairMes(data) {
         const partes = data.split("-"); // Divide a data em partes usando o traço como separador
         return partes[1]; // A segunda parte corresponde ao mês
     }
 
+    const [selectedMonth, setSelectedMonth] = useState("all");
+
     return (
-        <div id="history" class="tab-content">
+        <div id="history" className="tab-content">
             <h2>Histórico de Atendimentos</h2>
             <div class="formulario">
                 <label for="filterMonth">Filtrar por mês:</label>
@@ -94,15 +94,22 @@ export default function Historico() {
                         </tr>
                     </thead>
                     <tbody>
-                        {historico.map((atendimento) => (
-                            <tr>
-                                <td>{atendimento.ordemServico}</td>
-                                <td>{atendimento.data}</td>
-                                <td>{atendimento.local}</td>
-                                <td>{atendimento.descrição}</td>
-                                <td>{atendimento.status}</td>
-                            </tr>
-                        ))}
+                        {historico
+                            .filter(
+                                (atendimento) =>
+                                    selectedMonth === "all" ||
+                                    extrairMes(atendimento.data) ===
+                                        selectedMonth
+                            )
+                            .map((atendimento) => (
+                                <tr key={atendimento.ordemServico}>
+                                    <td>{atendimento.ordemServico}</td>
+                                    <td>{atendimento.data}</td>
+                                    <td>{atendimento.local}</td>
+                                    <td>{atendimento.descricao}</td>
+                                    <td>{atendimento.status}</td>
+                                </tr>
+                            ))}
                     </tbody>
                 </table>
 
