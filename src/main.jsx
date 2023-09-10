@@ -7,8 +7,8 @@ import Recomendacao from './routes/Recomendacao/index.jsx'
 import Membros from './routes/Membros/index.jsx'
 import Login from './routes/Login/index.jsx'
 import Historico from './routes/Historico/index.jsx'
-import Feedback from './routes/Feedback/index.jsx'
 import Error from './routes/Error/index.jsx'
+import Feedback from './routes/FeedBack/index.jsx'
 
 const router = createBrowserRouter([{
   path: '/',
