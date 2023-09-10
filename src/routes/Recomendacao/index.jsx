@@ -1,68 +1,107 @@
-import React from 'react';
+import React from "react";
 
 export default function Recomendacao() {
-
     function handleClick(event) {
-        event.preventDefault(); 
+        event.preventDefault();
         alert("OrionAI recomenda o guincho:\nPESADO COM PLAT HIDRAULICA MUNCK");
     }
 
     return (
         <div id="classification" className="tab-content">
-
             <h2>Recomendação do Guincho</h2>
             <form id="classificationForm" className="formulario">
-                <label htmlFor ="numeroOS">Número da OS:</label>
-                <input type="number" id="numeroOS" name="numeroOS" required/>
+                <label htmlFor="numeroOS">Número da OS:</label>
+                <input type="number" id="numeroOS" name="numeroOS" required />
 
-                <label htmlFor ="dataChamado">Data do Atendimento:</label>
-                <input type="date" id="dataChamado" name="dataChamado" required/>
+                <label htmlFor="dataChamado">Data do Atendimento:</label>
+                <input
+                    type="date"
+                    id="dataChamado"
+                    name="dataChamado"
+                    required
+                />
 
-                <label htmlFor ="idSegurado">CPF do Segurado:</label>
-                <input type="text" id="idSegurado" name="idSegurado" required/>
+                <label htmlFor="idSegurado">CPF do Segurado:</label>
+                <input type="text" id="idSegurado" name="idSegurado" required />
 
-                <label htmlFor ="marcaCaminhao">Marca do Caminhão:</label>
+                <label htmlFor="marcaCaminhao">Marca do Caminhão:</label>
                 <select id="marcaCaminhao" name="marcaCaminhao">
-                        <option value="DAF">DAF</option>
-                        <option value="Ford">Ford</option>
-                        <option value="Iveco">Iveco</option>
-                        <option value="Mercedez">Mercedes</option>
-                        <option value="Scania">Scania</option>
-                        <option value="Volvo">Volvo</option>
-                        <option value="Volvo">Volkswagen</option>
-                        <option value="Volvo">MAN</option>
-                        <option value="Volvo">Hyundai</option>
+                    <option value="DAF">DAF</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Iveco">Iveco</option>
+                    <option value="Mercedez">Mercedes</option>
+                    <option value="Scania">Scania</option>
+                    <option value="Volvo">Volvo</option>
+                    <option value="Volvo">Volkswagen</option>
+                    <option value="Volvo">MAN</option>
+                    <option value="Volvo">Hyundai</option>
                 </select>
 
-                <label htmlFor ="cargaCaminhao">Carga do Caminhão (em kilos):</label>
-                <input type="number" id="cargaCaminhao" name="cargaCaminhao" required/>
+                <label htmlFor="cargaCaminhao">
+                    Carga do Caminhão (em kilos):
+                </label>
+                <input
+                    type="number"
+                    id="cargaCaminhao"
+                    name="cargaCaminhao"
+                    required
+                />
 
-                <label htmlFor ="taraCaminhao">Tara do Caminhão (em kilos):</label>
-                <input type="number" id="taraCaminhao" name="taraCaminhao" required/>
+                <label htmlFor="taraCaminhao">
+                    Tara do Caminhão (em kilos):
+                </label>
+                <input
+                    type="number"
+                    id="taraCaminhao"
+                    name="taraCaminhao"
+                    required
+                />
 
-                <label htmlFor ="tamanhoCaminhao">Tamanho do Caminhão (em kilos):</label>
-                <input type="number" id="tamanhoCaminhao" name="tamanhoCaminhao" required/>
+                <label htmlFor="tamanhoCaminhao">
+                    Tamanho do Caminhão (em metros):
+                </label>
+                <input
+                    type="number"
+                    id="tamanhoCaminhao"
+                    name="tamanhoCaminhao"
+                    required
+                />
 
-                <label htmlFor ="tipoEngate">Tipo de Engate:</label>
+                <label htmlFor="tipoEngate">Tipo de Engate:</label>
                 <select id="tipoEngate" name="tipoEngate">
                     <option value="Engate de roda">Engate de roda</option>
-                    <option value="Engate de pescoço de ganso">Engate de pescoço de ganso</option>
-                    <option value="Engate do receptor">Engate do receptor</option>
-                    <option value="Engate de distribuição de peso">Engate de distribuição de peso</option>
-                    <option value="Engate de para-choques">Engate de para-choques</option>
+                    <option value="Engate de pescoço de ganso">
+                        Engate de pescoço de ganso
+                    </option>
+                    <option value="Engate do receptor">
+                        Engate do receptor
+                    </option>
+                    <option value="Engate de distribuição de peso">
+                        Engate de distribuição de peso
+                    </option>
+                    <option value="Engate de para-choques">
+                        Engate de para-choques
+                    </option>
                     <option value="Engate de RV">Engate de RV</option>
                     <option value="Engate Multi-Fit">Engate Multi-Fit</option>
                 </select>
 
-                <label htmlFor ="complexidadeAtendimento">Complexidade do Atendimento:</label>
-                <select id="complexidadeAtendimento" name="complexidadeAtendimento">
+                <label htmlFor="complexidadeAtendimento">
+                    Complexidade do Atendimento:
+                </label>
+                <select
+                    id="complexidadeAtendimento"
+                    name="complexidadeAtendimento"
+                >
                     <option value="Caminhão tombado">Caminhão tombado</option>
-                    <option value="Local de difícil acesso">Local de difícil acesso</option>
+                    <option value="Local de difícil acesso">
+                        Local de difícil acesso
+                    </option>
                     <option value="Eixo quebrado">Eixo quebrado</option>
                     <option value="Roda travada">Roda travada</option>
                 </select>
 
-                <label htmlFor ="estado">Estado:</label>
+                <label htmlFor="estado">Estado:</label>
                 <select id="estado" name="estado">
                     <option value="AC">Acre</option>
                     <option value="AL">Alagoas</option>
@@ -93,13 +132,13 @@ export default function Recomendacao() {
                     <option value="TO">Tocantins</option>
                 </select>
 
-                <label htmlFor ="cidade">Cidade:</label>
-                <input type="text" id="cidade" name="cidade" required/>
+                <label htmlFor="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required />
 
-                <button type="submit" onClick={handleClick}>Recomendar Guincho</button>
-
+                <button type="submit" onClick={handleClick}>
+                    Recomendar Guincho
+                </button>
             </form>
-
         </div>
-    )
+    );
 }
