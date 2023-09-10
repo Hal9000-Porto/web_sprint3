@@ -47,7 +47,7 @@ export default function Historico() {
             </div>
             <div class="card">
                 <h3>Proporção de Sucesso (%)</h3>
-                <p id="successRatio">0</p>
+                <p id="successRatio">55</p>
             </div>
             <div class="card">
                 <h3>Valor (R$)</h3>
