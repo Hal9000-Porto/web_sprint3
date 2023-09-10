@@ -12,7 +12,7 @@ export const historico = [
         status: "Erro"
     },
     {   ordemServico: "OS-1002",
-        data: "2023-08-27",
+        data: "2023-07-27",
         local: "local 3",
         descrição: "PESADO COM PLATAFORMA HIDRAULICA",
         status: "Acerto"
@@ -24,13 +24,13 @@ export const historico = [
         status: "Erro"
     },
     {   ordemServico:"OS-1004",
-        data: "2023-08-27",
+        data: "2023-01-27",
         local: "local 5",
         descrição: "PESADO COM QUINTA RODA E BANDEJA",
         status: "Acerto"
     },
     {   ordemServico:"OS-1005",
-        data: "2023-08-27",
+        data: "2023-05-27",
         local: "local 6",
         descrição: "PESADO COM TORRE E LANCA",
         status: "Erro"
