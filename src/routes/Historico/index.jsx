@@ -43,7 +43,7 @@ export default function Historico() {
         <div class="card-container">
             <div class="card">
                 <h3>Total de Sucessos</h3>
-                <p id="totalSuccess">0</p>
+                <p id="totalSuccess">74</p>
             </div>
             <div class="card">
                 <h3>Proporção de Sucesso (%)</h3>
