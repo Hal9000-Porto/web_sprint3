@@ -79,7 +79,7 @@ export default function Historico() {
                     </div>
                     <div class="card">
                         <h3>Valor (R$)</h3>
-                        <p id="totalValue">0</p>
+                        <p id="totalValue">89</p>
                     </div>
                 </div>
 
