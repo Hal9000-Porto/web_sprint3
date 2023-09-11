@@ -36,11 +36,6 @@ export default function Historico() {
                 </select>
 
                 <label htmlFor="filterType">Filtrar por tipo de guincho:</label>
-                <select
-                    id="filterType"
-                    onChange={(e) => setSelectedType(e.target.value)}
-                    value={selectedType}
-                >
                     <option value="all">Todos</option>
                     <option value="GUINCHO PESADO NAO PADRAO">
                         GUINCHO PESADO NAO PADRAO
@@ -60,13 +55,13 @@ export default function Historico() {
                     <option value="PESADO COM TORRE E LANCA">
                         PESADO COM TORRE E LANCA
                     </option>
-                    <option value="pesado_com_plataforma_hidraulica_e_lanca">
+                    <option value="PESADO COM PLATAFORMA HIDRAULICA E LANCA">
                         PESADO COM PLATAFORMA HIDRAULICA E LANCA
                     </option>
-                    <option value="pesado_com_quinta_roda_e_lanca">
+                    <option value="PESADO COM QUINTA RODA E LANCA">
                         PESADO COM QUINTA RODA E LANCA
                     </option>
-                    <option value="tecnico_pesado_para_guincho_pesado">
+                    <option value="TECNICO PESADO PARA GUINCHO PESADO">
                         TECNICO PESADO PARA GUINCHO PESADO
                     </option>
                 </select>
@@ -100,8 +95,7 @@ export default function Historico() {
                         {historico
                             .filter(
                                 (atendimento) =>
-                                    (selectedMonth === "all" || extrairMes(atendimento.data) === selectedMonth) &&
-                                    (selectedType === "all" || atendimento.tipo === selectedType)
+                                    (selectedMonth === "all" || extrairMes(atendimento.data) === selectedMonth)
                             )
                             .map((atendimento) => (
                                 <tr key={atendimento.ordemServico}>
