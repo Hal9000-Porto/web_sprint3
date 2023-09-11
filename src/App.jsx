@@ -3,13 +3,13 @@ import { Outlet } from 'react-router-dom'
 import Menu from './components/Menu'
 import Rodape from './components/Rodape'
 
-function App(){
+function App() {
 
-  return(
+  return (
     <main>
-      <Menu/>
-      <Outlet/>
-      <Rodape/>
+      <Menu />
+      <Outlet />
+      <Rodape />
     </main>
   )
 }
