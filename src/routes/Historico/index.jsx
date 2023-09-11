@@ -100,7 +100,7 @@ export default function Historico() {
                                 (atendimento) =>
                                     selectedMonth === "all" ||
                                     extrairMes(atendimento.data) ===
-                                        selectedMonth
+                                    selectedMonth
                             )
                             .map((atendimento) => (
                                 <tr key={atendimento.ordemServico}>
