@@ -8,12 +8,13 @@ export default function Historico() {
     }
 
     const [selectedMonth, setSelectedMonth] = useState("all");
+    const [selectedType, setSelectedType] = useState("all");
 
     return (
         <div id="history" className="tab-content">
             <h2>Histórico de Atendimentos</h2>
-            <div class="formulario">
-                <label for="filterMonth">Filtrar por mês:</label>
+            <div className="formulario">
+                <label htmlFor="filterMonth">Filtrar por mês:</label>
                 <select
                     id="filterMonth"
                     onChange={(e) => setSelectedMonth(e.target.value)}
@@ -34,28 +35,30 @@ export default function Historico() {
                     <option value="12">Dezembro</option>
                 </select>
 
-                <label for="filterType">Filtrar por tipo de guincho:</label>
-                <select id="filterType" onchange="filterData()">
-                    <option value="guincho_pesado_nao_padrao">
+                <label htmlFor="filterType">Filtrar por tipo de guincho:</label>
+                <select
+                    id="filterType"
+                    onChange={(e) => setSelectedType(e.target.value)}
+                    value={selectedType}
+                >
+                    <option value="all">Todos</option>
+                    <option value="GUINCHO PESADO NAO PADRAO">
                         GUINCHO PESADO NAO PADRAO
                     </option>
-                    <option value="pesado_com_plat_hidraulica_munck">
+                    <option value="PESADO COM PLAT HIDRAULICA MUNCK">
                         PESADO COM PLAT HIDRAULICA MUNCK
                     </option>
-                    <option value="pesado_com_plataforma_hidraulica">
+                    <option value="PESADO COM PLATAFORMA HIDRAULICA">
                         PESADO COM PLATAFORMA HIDRAULICA
                     </option>
-                    <option value="pesado_com_plataforma_hidraulica_e_band">
+                    <option value="PESADO COM PLATAFORMA HIDRAULICA E BAND">
                         PESADO COM PLATAFORMA HIDRAULICA E BAND
                     </option>
-                    <option value="pesado_com_quinta_roda_e_bandeja">
+                    <option value="PESADO COM QUINTA RODA E BANDEJA">
                         PESADO COM QUINTA RODA E BANDEJA
                     </option>
-                    <option value="pesado_com_torre_e_lanca">
+                    <option value="PESADO COM TORRE E LANCA">
                         PESADO COM TORRE E LANCA
-                    </option>
-                    <option value="pesado_com_plataforma_hidraulica_2">
-                        PESADO COM PLATAFORMA HIDRAULICA
                     </option>
                     <option value="pesado_com_plataforma_hidraulica_e_lanca">
                         PESADO COM PLATAFORMA HIDRAULICA E LANCA
@@ -68,16 +71,16 @@ export default function Historico() {
                     </option>
                 </select>
 
-                <div class="card-container">
-                    <div class="card">
+                <div className="card-container">
+                    <div className="card">
                         <h3>Total de Sucessos</h3>
                         <p id="totalSuccess">74</p>
                     </div>
-                    <div class="card">
+                    <div className="card">
                         <h3>Proporção de Sucesso (%)</h3>
                         <p id="successRatio">55</p>
                     </div>
-                    <div class="card">
+                    <div className="card">
                         <h3>Valor (R$)</h3>
                         <p id="totalValue">89</p>
                     </div>
@@ -97,9 +100,8 @@ export default function Historico() {
                         {historico
                             .filter(
                                 (atendimento) =>
-                                    selectedMonth === "all" ||
-                                    extrairMes(atendimento.data) ===
-                                    selectedMonth
+                                    (selectedMonth === "all" || extrairMes(atendimento.data) === selectedMonth) &&
+                                    (selectedType === "all" || atendimento.tipo === selectedType)
                             )
                             .map((atendimento) => (
                                 <tr key={atendimento.ordemServico}>
