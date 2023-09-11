@@ -12,31 +12,31 @@ import Recomendacao from './routes/Recomendacao/index.jsx'
 
 const router = createBrowserRouter([{
   path: '/',
-  element: <App/>,
-  errorElement: <Error/>,
+  element: <App />,
+  errorElement: <Error />,
   children: [
     {
       path: '/',
-      element: <Recomendacao/>,
-    },{
-    path: '/membros',
-    element: <Membros/>,
-  },{
-    path: '/historico',
-    element: <Historico/>,
-  },{
-    path: '/feedback',
-    element: <Feedback/>,
-  },{
-    path: '/login',
-    element: <Login/>,
-  }
-],
+      element: <Recomendacao />,
+    }, {
+      path: '/membros',
+      element: <Membros />,
+    }, {
+      path: '/historico',
+      element: <Historico />,
+    }, {
+      path: '/feedback',
+      element: <Feedback />,
+    }, {
+      path: '/login',
+      element: <Login />,
+    }
+  ],
 }])
-  
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
