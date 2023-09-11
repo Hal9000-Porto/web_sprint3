@@ -100,7 +100,8 @@ export default function Historico() {
                         {historico
                             .filter(
                                 (atendimento) =>
-                                    (selectedMonth === "all" || extrairMes(atendimento.data) === selectedMonth)
+                                    (selectedMonth === "all" || extrairMes(atendimento.data) === selectedMonth) &&
+                                    (selectedType === "all" || atendimento.descrição === selectedType)
                             )
                             .map((atendimento) => (
                                 <tr key={atendimento.ordemServico}>
