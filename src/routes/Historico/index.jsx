@@ -36,6 +36,11 @@ export default function Historico() {
                 </select>
 
                 <label htmlFor="filterType">Filtrar por tipo de guincho:</label>
+                <select
+                    id="filterType"
+                    onChange={(e) => setSelectedType(e.target.value)}
+                    value={selectedType}
+                >
                     <option value="all">Todos</option>
                     <option value="GUINCHO PESADO NAO PADRAO">
                         GUINCHO PESADO NAO PADRAO
