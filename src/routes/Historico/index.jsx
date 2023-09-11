@@ -3,8 +3,8 @@ import { historico } from "../../components/HistoricoAtendimento";
 
 export default function Historico() {
     function extrairMes(data) {
-        const partes = data.split("-"); // Divide a data em partes usando o traço como separador
-        return partes[1]; // A segunda parte corresponde ao mês
+        const partes = data.split("-");
+        return partes[1];
     }
 
     const [selectedMonth, setSelectedMonth] = useState("all");
@@ -84,7 +84,6 @@ export default function Historico() {
                 </div>
 
                 <table id="historyTable">
-                    {/*   <!-- Conteúdo da tabela será gerado pelo JavaScript -->*/}
                     <thead>
                         <tr>
                             <th>Ordem de Serviço</th>
@@ -107,7 +106,7 @@ export default function Historico() {
                                     <td>{atendimento.ordemServico}</td>
                                     <td>{atendimento.data}</td>
                                     <td>{atendimento.local}</td>
-                                    <td>{atendimento.descricao}</td>
+                                    <td>{atendimento.descrição}</td>
                                     <td>{atendimento.status}</td>
                                 </tr>
                             ))}
