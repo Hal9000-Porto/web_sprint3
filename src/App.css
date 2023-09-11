@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 /*Geral*/
 body {
   margin: 0;
@@ -17,6 +18,7 @@ body {
   text-align: center;
   padding: 1em;
 }
+
 .menu img {
   width: 150px;
   vertical-align: middle;
@@ -31,14 +33,14 @@ body {
   text-align: center;
   background-color: #508ac4;
   color: #fff;
-  padding: 10px; 
+  padding: 10px;
 }
 
 .navbar a {
-  text-decoration: none; 
-  color: #fff; 
+  text-decoration: none;
+  color: #fff;
   font-weight: bold;
-  transition: color 0.3s; 
+  transition: color 0.3s;
 }
 
 .navbar a:hover {
@@ -62,7 +64,9 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.formulario label, form input, form select {
+.formulario label,
+form input,
+form select {
   display: block;
   margin-bottom: 15px;
 }
@@ -83,43 +87,51 @@ body {
 /* Login */
 
 .login {
-  background-color: #003366; 
+  background-color: #003366;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   text-align: center;
 }
+
 .login-card {
-  background-color: #fff; /* Fundo branco */
+  background-color: #fff;
+  /* Fundo branco */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
+
 .login h2 {
   margin-bottom: 20px;
 }
+
 .login form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .login-inputs {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
+
 .login label {
   font-weight: bold;
   margin-bottom: 5px;
 }
-.login input{
+
+.login input {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
 .login button {
-  background-color: #3498db; 
+  background-color: #3498db;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -128,10 +140,11 @@ body {
 }
 
 .login button:hover {
-  background-color: #2980b9; 
+  background-color: #2980b9;
 }
+
 .login a {
-  text-decoration: none; 
+  text-decoration: none;
   color: #fff;
 }
 
@@ -140,6 +153,7 @@ body {
   justify-content: space-around;
   margin-top: 20px;
 }
+
 .card {
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -147,7 +161,7 @@ body {
   padding: 16px;
   text-align: center;
   background-color: #f9f9f9;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -158,11 +172,14 @@ table {
   border-collapse: collapse;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid #ccc;
 }
 
-th, td {
+th,
+td {
   padding: 12px;
   text-align: left;
 }
@@ -173,37 +190,39 @@ th {
 
 /* Rodape */
 
-  footer {
-    background-color: #508ac4;
-    color: #fff;
-    padding: 20px;
+footer {
+  background-color: #508ac4;
+  color: #fff;
+  padding: 20px;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; 
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-footer p{
+footer p {
   text-align: center;
 
 }
+
 .footer-logo-image {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-    vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 .footer-text {
-    display: inline-block;
+  display: inline-block;
 }
+
 footer a {
-  text-decoration: none; 
-  color: #fff; 
+  text-decoration: none;
+  color: #fff;
   font-weight: bold;
-  transition: color 0.3s; 
+  transition: color 0.3s;
 }
 
 footer a:hover {
@@ -212,7 +231,7 @@ footer a:hover {
 
 /* Membros */
 
- 
+
 
 .membros {
 
@@ -226,7 +245,7 @@ footer a:hover {
 
 }
 
- 
+
 
 .bloco-criadores {
 
@@ -246,7 +265,7 @@ footer a:hover {
 
 }
 
- 
+
 
 .perfil {
 
@@ -254,7 +273,7 @@ footer a:hover {
 
 }
 
- 
+
 
 .img-perfil {
 
@@ -270,7 +289,7 @@ footer a:hover {
 
 }
 
- 
+
 
 .perfil p {
 
@@ -280,7 +299,7 @@ footer a:hover {
 
 }
 
- 
+
 
 .perfil-contato {
 
@@ -290,7 +309,7 @@ footer a:hover {
 
 }
 
- 
+
 
 .icon {
 
@@ -302,7 +321,7 @@ footer a:hover {
 
 }
 
- 
+
 
 .icon:last-child {
 
@@ -310,7 +329,7 @@ footer a:hover {
 
 }
 
- 
+
 
 .icon:hover {
 
