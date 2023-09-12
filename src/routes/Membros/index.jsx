@@ -42,6 +42,14 @@ export default function Membros() {
                     </div>
                 </div>
             ))}
+            
+                <div className="bloco-criadores">
+                    <div className="perfil">
+                        <img src="../../src/assets/github-mark.png" alt="Logo gitHub" className="img-perfil" />
+                        <p><a href="https://github.com/Hal9000-Porto/web_sprint3" target="_blank">Link github</a></p>
+                    </div>
+                </div>
         </div>
+        
     );
 }

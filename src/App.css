@@ -7,6 +7,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 90vh;
   background-color: #f3f4f6;
 }
 
@@ -84,76 +85,6 @@ form select {
   background-color: #003366;
 }
 
-/* Login */
-
-.login {
-  background-color: #003366;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
-}
-
-.login-card {
-  background-color: #fff;
-  /* Fundo branco */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
-
-.login h2 {
-  margin-bottom: 20px;
-}
-
-.login form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.login-inputs {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-}
-
-.login label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.login input {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.login button {
-  background-color: #3498db;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.login button:hover {
-  background-color: #2980b9;
-}
-
-.login a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.card-container {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-}
-
 .card {
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -164,6 +95,11 @@ form select {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
 
 /* Tabela */
 

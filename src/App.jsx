@@ -8,7 +8,9 @@ function App() {
   return (
     <main>
       <Menu />
+      <body>
       <Outlet />
+      </body>
       <Rodape />
     </main>
   )

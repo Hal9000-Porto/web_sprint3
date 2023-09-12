@@ -1,6 +1,12 @@
+import React from "react";
 import { guinchoTipos } from "../../components/TipoGuinchos"
 
 export default function Feedback() {
+    function handleClick(event) {
+        event.preventDefault();
+        alert("Feedback enviado com sucesso!");
+    }
+
     return (
         <>
             <div class="tab-content">
@@ -14,11 +20,9 @@ export default function Feedback() {
                         {guinchoTipos.map((tipo) => (
                             <option value={tipo}>{tipo}</option>
                         ))}
-
-
                     </select>
 
-                    <button type="submit">Enviar Feedback</button>
+                    <button type="submit"  onClick={handleClick}>Enviar Feedback</button>
                 </form>
             </div>
         </>
