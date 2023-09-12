@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { historico } from "../../components/HistoricoAtendimento";
+import { guinchoTipos } from "../../components/TipoGuinchos";
 
 export default function Historico() {
     function extrairMes(data) {
@@ -42,33 +43,12 @@ export default function Historico() {
                     value={selectedType}
                 >
                     <option value="all">Todos</option>
-                    <option value="GUINCHO PESADO NAO PADRAO">
-                        GUINCHO PESADO NAO PADRAO
-                    </option>
-                    <option value="PESADO COM PLAT HIDRAULICA MUNCK">
-                        PESADO COM PLAT HIDRAULICA MUNCK
-                    </option>
-                    <option value="PESADO COM PLATAFORMA HIDRAULICA">
-                        PESADO COM PLATAFORMA HIDRAULICA
-                    </option>
-                    <option value="PESADO COM PLATAFORMA HIDRAULICA E BAND">
-                        PESADO COM PLATAFORMA HIDRAULICA E BAND
-                    </option>
-                    <option value="PESADO COM QUINTA RODA E BANDEJA">
-                        PESADO COM QUINTA RODA E BANDEJA
-                    </option>
-                    <option value="PESADO COM TORRE E LANCA">
-                        PESADO COM TORRE E LANCA
-                    </option>
-                    <option value="PESADO COM PLATAFORMA HIDRAULICA E LANCA">
-                        PESADO COM PLATAFORMA HIDRAULICA E LANCA
-                    </option>
-                    <option value="PESADO COM QUINTA RODA E LANCA">
-                        PESADO COM QUINTA RODA E LANCA
-                    </option>
-                    <option value="TECNICO PESADO PARA GUINCHO PESADO">
-                        TECNICO PESADO PARA GUINCHO PESADO
-                    </option>
+
+                    {guinchoTipos.map((tipo) => (
+                        
+                        <option value={tipo}> {tipo} </option>
+                        ))}
+               
                 </select>
 
                 <div className="card-container">
